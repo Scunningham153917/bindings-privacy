@@ -1,81 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Privacy Policy — Bindings</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bindings Privacy Policy</title>
 <style>
-    body {
-        font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
-        max-width: 680px;
-        margin: 60px auto;
-        padding: 0 24px;
-        line-height: 1.6;
-        color: #2a2a2a;
-        background: #FAF6EE;
-    }
-    h1 {
-        font-size: 28px;
-        margin-bottom: 4px;
-    }
-    .effective-date {
-        color: #777;
-        font-size: 14px;
-        margin-bottom: 40px;
-    }
-    h2 {
-        font-size: 18px;
-        margin-top: 36px;
-        color: #6B4A33;
-    }
-    p, li {
-        font-size: 16px;
-    }
-    a {
-        color: #B8432F;
-    }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif; max-width: 680px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #222; }
+  h1 { font-size: 1.8em; margin-bottom: 0.2em; }
+  h2 { font-size: 1.2em; margin-top: 1.8em; }
+  .date { color: #777; margin-top: 0; }
+  a { color: #0a66c2; }
+  @media (prefers-color-scheme: dark) { body { background: #1c1c1e; color: #eee; } .date { color: #aaa; } a { color: #64a8ff; } }
 </style>
 </head>
 <body>
 
-<h1>Privacy Policy for Bindings</h1>
-<p class="effective-date">Effective date: 28 October 2026</p>
+<h1>Bindings Privacy Policy</h1>
+<p class="date">Last updated: 13 November 2026</p>
 
-<p>Bindings is a personal reading tracker. This policy explains what happens to your data when you use it.</p>
+<p>Bindings is a reading tracker for iPhone, iPad and Mac. It has no accounts, no adverts, no analytics and no tracking. I (the developer) never receive any of your data.</p>
 
-<h2>What Bindings stores</h2>
-<p>Your library — book titles, authors, genres, ratings, notes, quotes, reading dates, and cover images — is stored:</p>
+<h2>Where your library is stored</h2>
+<p>Your books, shelves, notes and reading progress are stored on your device. If you're signed in to iCloud, they also sync through your own private iCloud storage, using Apple's CloudKit. Apple handles that storage under the <a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a>, and I can't see it.</p>
+
+<h2>Book lookups (Google Books and Open Library)</h2>
+<p>Bindings only goes online when you ask it to look up a book. That happens when you:</p>
 <ul>
-    <li>Locally on your device, and</li>
-    <li>In your own private iCloud account, if you're signed in, so your library can sync across your Mac, iPhone, and iPad.</li>
+  <li>tap Look Up in Add Book, or Find by ISBN in Edit Book</li>
+  <li>scan a barcode</li>
+  <li>tap Find Covers and Details in Settings</li>
 </ul>
-<p>This data is never sent to us, stored on our servers, or shared with any third party. We don't operate a server for Bindings at all — your library lives in Apple's iCloud, under your Apple ID, governed by Apple's own privacy practices (see Apple's Privacy Policy at <a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a>).</p>
-
-<h2>Looking up book details</h2>
-<p>When you look up a book by ISBN or scan its barcode, Bindings sends the ISBN number to Open Library and/or Google Books to retrieve the title, author, page count, and cover image. No other information about you or your library is sent with that request. If you've added your own Google Books API key in Settings, that key is stored only on your device — we never see it.</p>
-
-<h2>Barcode scanning</h2>
-<p>Barcode scanning uses your device's camera to read the barcode directly on-device. No photo or video is captured, stored, or sent anywhere — the camera feed is processed locally by iOS and discarded immediately after the barcode is recognised.</p>
-
-<h2>Importing and exporting your library</h2>
-<p>Bindings lets you export your library to a file (for backup) and import it back, or import from a Goodreads export file. These files are handled entirely on your device — you choose where they're saved, and we never see their contents.</p>
-
-<h2>What we don't do</h2>
+<p>Each time, the app sends one of two things to Google Books, and to Open Library if Google has no result:</p>
 <ul>
-    <li>We don't collect analytics or usage data.</li>
-    <li>We don't show ads or use advertising trackers.</li>
-    <li>We don't require you to create an account with us.</li>
-    <li>We don't sell or share your data with anyone, because we never have access to it in the first place.</li>
+  <li>the book's ISBN, or</li>
+  <li>the book's title and author.</li>
+</ul>
+<p>Nothing else from your library is sent. The information that comes back (cover, page count, author) is saved into your library only if those fields are blank.</p>
+<p>Google and Open Library get these requests the same way any website does when you visit it. Their own privacy policies apply: <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and <a href="https://archive.org/about/terms.php">Internet Archive (Open Library) terms</a>.</p>
+
+<h2>Optional Google Books API key</h2>
+<p>If you add your own Google Books API key under Settings &gt; Your Library &gt; Advanced, it's stored only on that device. It's sent only to Google, as part of book lookups. You don't need a key to use Bindings.</p>
+
+<h2>Camera, photos and files</h2>
+<ul>
+  <li>Barcode scanning uses the camera to read the barcode on your device. No images are saved or sent anywhere.</li>
+  <li>Cover pictures you choose with Photos or File stay in your library.</li>
+  <li>Goodreads, Kindle and StoryGraph import files are read on your device and are never uploaded.</li>
 </ul>
 
-<h2>Children's privacy</h2>
-<p>Bindings is not directed at children and doesn't knowingly collect information from anyone under 13.</p>
+<h2>Deleting your data</h2>
+<p>You can delete any book in the app. To remove everything, delete the app. To remove the iCloud copy too, go to Settings &gt; [your name] &gt; iCloud &gt; Manage Storage.</p>
 
-<h2>Changes to this policy</h2>
-<p>If this policy changes, the updated version will be posted here with a new effective date.</p>
+<h2>Children</h2>
+<p>Bindings doesn't collect personal information from anyone, including children.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, the new version will be posted here with a new date.</p>
 
 <h2>Contact</h2>
 <p>Questions about this policy can be sent to <a href="mailto:scunn@blueyonder.co.uk">scunn@blueyonder.co.uk</a>.</p>
-
 </body>
 </html>
